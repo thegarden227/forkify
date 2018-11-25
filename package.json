@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --hot --open 'Google Chrome'"
   },
   "repository": {
     "type": "git",

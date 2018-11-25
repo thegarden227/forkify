@@ -4,7 +4,8 @@ export const selectedElements = {
     searchResultList: document.querySelector('.results__list'),
     searchSpinnerParent: document.querySelector('.results'),
     searchResList : document.querySelector('.result__list'),
-    searchResPages: document.querySelector('.results__pages')
+    searchResPages: document.querySelector('.results__pages'),
+    recipe: document.querySelector('.recipe')
 }
 
 export const elementStrings = {
@@ -30,7 +31,7 @@ export const clearLoader = () => {
 
 export const hideLoader = ()=>{
     const loader = document.querySelector(`.${elementStrings.loader}`);
-    console.log(`The class for element is .${elementStrings.loader}`);
+    
     if (loader) {
         loader.parentElement.removeChild(loader);
     }
